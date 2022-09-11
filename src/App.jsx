@@ -9,12 +9,14 @@ import Footer from '../src/components/Footer'
 
 function App () {
   return (
-   <Navbar/>,
-   <About/>,
-   <Event1/>,
-   <Event2/>,
-   <Event3/>,
+    <div>
+   <Navbar/>
+   <About/>
+   <Event1/>
+   <Event2/>
+   <Event3/>
    <Footer/>
+   </div>
   )
 }
 

@@ -1,29 +1,30 @@
 import React from 'react'
+import Ab from '../about.svg'
+
 
 const Event3 = () => {
   return (
-       <div className="row">
-        <div className="col-md-10 col-12 mx-auto">
-            <h1 className="text-center main-heading">About Us</h1>
-            <p className="text-center sub-heading">grow your business with us</p>
-            <div className="row">
-                <div className="col-md-6 col-12 hero-text ">
+    <div class="container-fluid mt-5 about-style" id="aboutid">
+    <div class="row">
+        <div class="col-md-10 col-12 mx-auto">
+            <div class="row">
+                <div class="col-md-6 col-12 hero-text ">
                     <figure>
-                        <img src="images/about.svg" alt="herosection_image"/>
+                        <img src={Ab} alt="herosection_image"/>
                     </figure>
                 </div>
 
-                <div className="col-md-6 col-12 hero-text  d-flex justify-content-center align-items-start flex-column"/>
-                    <h1>WE ARE THE PROFESSIONAL DEVELOPER</h1>
+                <div class="col-md-6 col-12 hero-text  d-flex justify-content-center align-items-start flex-column">
+                    <h1>Darpan</h1>
 
-                    <p>Welcome To <span className="bold-style">ThapaTechnical </span>
-                        , Your Number One Source For All Things. We're Dedicated To Giving
-                        You The Very Best Of Work, With A Focus On [Three Characteristics, Ie: Dependability,
-                        Customer Service And Uniqueness.]</p>
-                    <button className="btn-style btn-primary">Read more</button>
+                    <p>Welcome To <span class="bold-style">Darpan </span>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia exercitationem deleniti tempora quae? Voluptatibus tempore incidunt ducimus dolorem voluptatum deleniti, magnam vel alias est qui error fuga reiciendis nesciunt ut expedita numquam? Voluptatem, in.</p>
+                    <button class="btn-style btn-primary">Read more</button>
                 </div>
             </div>
         </div>
+    </div>
+</div>
   )
 }
 

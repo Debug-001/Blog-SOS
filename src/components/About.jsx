@@ -1,32 +1,35 @@
 import React from 'react'
+import Ab from '../about.png'
+function About() {
+    return (
+        <div class="container-fluid mt-5 about-style" id="darpan">
+            <div class="row">
+                <div class="col-md-10 col-12 mx-auto">
+                    <h1 class="text-center main-heading">School Of Sciences</h1>
+                    <p class="text-center sub-heading">Christ University</p>
+                    <div class="row">
+                        <div class="col-md-6 col-12 hero-text ">
+                            <figure>
+                                <img src={Ab} className="-about-icon" alt="herosection_image" />
+                            </figure>
+                        </div>
 
-const About = () => {
-  return (
-      <div className="container-fluid mt-5 about-style" id="aboutid">
-    <div className="row">
-        <div className="col-md-10 col-12 mx-auto">
-            <h1 className="text-center main-heading">About Us</h1>
-            <p className="text-center sub-heading">grow your business with us</p>
-            <div className="row">
-                <div className="col-md-6 col-12 hero-text ">
-                    <figure>
-                        <img src="images/about.svg" alt="herosection_image"/>
-                    </figure>
-                </div>
+                        <div class="col-md-6 col-12 hero-text  d-flex justify-content-center align-items-start flex-column">
+                            <h1 className="top-text">Darpan 2022</h1>
 
-                <div className="col-md-6 col-12 hero-text  d-flex justify-content-center align-items-start flex-column"/>
-                    <h1>WE ARE THE PROFESSIONAL DEVELOPER</h1>
-
-                    <p>Welcome To <span className="bold-style">ThapaTechnical </span>
-                        , Your Number One Source For All Things. We're Dedicated To Giving
-                        You The Very Best Of Work, With A Focus On [Three Characteristics, Ie: Dependability,
-                        Customer Service And Uniqueness.]</p>
-                    <button className="btn-style btn-primary">Read more</button>
+                            <p><span class="bold-style">Darpan </span>
+                                is an Intra - University Festthattakes place every odd semester. Itis a boiling pointin
+                                which the best students are chosen to form the culturalteam, who will go on to representthe
+                                university in various inter-college fests. This Talent Hunt provides the students a platform to
+                                exhibittheir skills. Darpan is a major fest consisting of a number of competitions that are held to
+                                satiate every facet of artistic expression, including Art, Literature, Theatre, Dance, and Music</p>
+                            <button class="btn-style btn-primary"  onClick={(e) => { e.preventDefault(); window.location.href='http://google.com';}}>Read more</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-  )
+    )
 }
 
 export default About
