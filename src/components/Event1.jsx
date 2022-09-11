@@ -1,5 +1,5 @@
 import React from 'react'
-import Eve1 from '../Event1.png'
+import Eve1 from '../assets/Event1.png'
 
 const Event1 = () => {
   return (

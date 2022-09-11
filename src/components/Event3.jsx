@@ -1,5 +1,5 @@
 import React from 'react'
-import Ab from '../about.svg'
+import Ab from '../assets/about.png'
 
 
 const Event3 = () => {

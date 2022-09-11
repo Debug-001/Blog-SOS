@@ -1,5 +1,5 @@
 import React from 'react'
-import Ab from '../about.png'
+import Ab from '../assets/about.png'
 function About() {
     return (
         <div class="container-fluid mt-5 about-style" id="darpan">

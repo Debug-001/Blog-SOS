@@ -1,5 +1,5 @@
 import React from 'react'
-import Chess from '../chess.png'
+import Chess from '../assets/chess.png'
 
 const Event2 = () => {
   return (
