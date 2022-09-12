@@ -65,7 +65,7 @@ function Navbar() {
                   <span className="sr-only"></span></a>
               </li>
               <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"  aria-expanded="false">
+                <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-toggle="dropdown"  aria-expanded="false">
                   Clubs
                 </a>
          
@@ -76,7 +76,7 @@ function Navbar() {
                 </div>
               </li>
               <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"  aria-expanded="false">
+                <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-toggle="dropdown"  aria-expanded="false">
                   Courses
                 </a>
          
@@ -87,7 +87,7 @@ function Navbar() {
                 </div>
               </li>
               <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"  aria-expanded="false">
+                <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-toggle="dropdown"  aria-expanded="false">
                   Upcoming Events
                 </a>
          
@@ -98,7 +98,7 @@ function Navbar() {
                 </div>
               </li>
               <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"  aria-expanded="false">
+                <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-toggle="dropdown"  aria-expanded="false">
                   Faculty List
                 </a>
                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">

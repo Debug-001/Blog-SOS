@@ -34,7 +34,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div class="footer-copyright text-center py-1"><h1 style={{ "font-size": "17px", "margin-top": "3rem" }}>Copyright © CHRIST (Deemed to be University) 2020</h1><p>Website developed by Om Sharma, Samyak Jain, Mohammad Abbas.</p>
+            <div class="footer-copyright text-center py-1"><h1 style={{ "font-size": "17px", "margin-top": "3rem" }}>Copyright © CHRIST (Deemed to be University) 2020</h1><p>Website developed by <a href="http://ombhatt.com">Om Sharma</a>, <a href="https://samyak003.in">Samyak Jain</a>, Mohammad Abbas.</p>
             </div>
         </footer>
 
