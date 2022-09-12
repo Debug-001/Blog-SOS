@@ -1,8 +1,8 @@
 import React from 'react'
-import Home from './components/Home';
-import Dsa from './components/Dsa'
-import Sc from './components/Sc' 
-import Faculty from './components/Faculty'
+import Home from './pages/Home';
+import Dsa from './pages/Dsa'
+import Sc from './pages/Sc' 
+import Faculty from './pages/Faculty'
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 

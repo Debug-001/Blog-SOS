@@ -48,11 +48,11 @@ h3 {
 .navbar-style {
   background-color: #f8f9fa;
   box-shadow: 2px 4px 13px 1px rgba(8, 8, 8, 0.04);
-  border-bottom: 35px solid #18408b;
+  border-bottom: 35px solid #18408b ;
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color:  #123880 !important ;
+  color:  #18408b !important ;
   text-transform: capitalize;
   letter-spacing: 0.1rem;
   padding-left: 1rem;
@@ -136,19 +136,19 @@ label {
   text-transform: uppercase;
   letter-spacing: 1px;
   border: 2px solid #fff;
-  background:  #0319a3;
+  background:  #18408b;
   -webkit-transition: 0.5s all;
   -moz-transition: 0.5s all;
   -o-transition: 0.5s all;
   -ms-transition: 0.5s all;
   transition: 0.5s all;
-  border-radius: 6px;
+  border-radius: 90000px;
 }
 
 
 
 .btn-style:hover{
-  color: rgb(0, 0, 0) ;
+  color: rgb(255, 255, 255) ;
 
 }
 
@@ -162,7 +162,7 @@ label {
 .service-style .main-heading,
 .contact-style .main-heading {
   font-size: 5rem;
-  color: #0319a3;
+  color: #18408b;
   letter-spacing: 1px;
   font-weight: bold;
 }
@@ -297,6 +297,12 @@ footer p {
 /* media queries part starts here  */
 
 @media (max-width: 768px) {
+
+  .event1-icon{
+    width: 10% !important;
+  }
+
+
   #logo {
     font-size: 2.5rem;
   }
@@ -324,19 +330,4 @@ footer p {
   .contact-style .sub-heading {
     font-size: 2rem;
   }
-}
-
-
-.fa{
-  font-size: 30px !important;
-  margin-right: 4px !important;
-  margin-top: 1px;
-}
-
-.fa:hover{
-  cursor: pointer;
-  filter: invert(0%);
-  transition: all 0.1s linear;
-  transform: scale(1.2);
-  color:#ec615b;
 }
