@@ -1,8 +1,9 @@
 import React from 'react'
 import Navbar from '../components/Navbar' 
 import Clogo from '../assets/clogo.png'
+import Footer from '../components/Footer'
 
-const Sc = () => {
+const ScienceClub = () => {
   return (
     <div>
       <Navbar/>
@@ -29,10 +30,9 @@ const Sc = () => {
                 </div>
             </div>
         </div>
-      
-      
+        <Footer/>
       </div>
   )
 }
 
-export default Sc
+export default ScienceClub

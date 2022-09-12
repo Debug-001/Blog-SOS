@@ -1,5 +1,5 @@
 import React from 'react'
-import Chess from '../assets/chess.png'
+import Chess from '../assets/logo1.png'
 
 const Event2 = () => {
   return (
@@ -20,7 +20,7 @@ const Event2 = () => {
                     ♟" is everything : art, culture, science and sport."♟ with these great words by Anataly Karpov ,
 *Christ University School of Business & Management and School of Sciences* invite everyone to sharpen your brain while having fun.
 So let's play a game of chess in *"Sheh-Maat 2022"* , a *Chess Tournament* being organized at the departmental level .</p>
-                    <button class="btn-style btn-primary">Read more</button>
+                    <button class="btn-style btn-primary" onClick={(e) => { e.preventDefault(); window.location.href='https://docs.google.com/forms/d/1pFRPxv7DY1oxE-7vHqBN2up2dqXOFKwZojYZljVhrtk/closedform';}}>Read more</button>
                 </div>
             </div>
         </div>

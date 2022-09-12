@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 export default function faculty(){
   const faculty = [
@@ -44,6 +45,7 @@ export default function faculty(){
                     ))
                   }
             </ul>
+            <Footer/>
         </div>
     )
   }

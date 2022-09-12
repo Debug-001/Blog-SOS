@@ -25,7 +25,7 @@ function About() {
                                 university in various inter-college fests. This Talent Hunt provides the students a platform to
                                 exhibittheir skills. Darpan is a major fest consisting of a number of competitions that are held to
                                 satiate every facet of artistic expression, including Art, Literature, Theatre, Dance, and Music</p>
-                            <button class="btn-style btn-primary"  onClick={(e) => { e.preventDefault(); window.location.href='http://google.com';}}>Read more</button>
+                            <button class="btn-style btn-primary"  onClick={(e) => { e.preventDefault(); window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSee52Ql3ayqbIBBedDQ8oTPQxLa4fIXGGcvVl1Lg7LrsMTcXw/closedform';}}>Read more</button>
                         </div>
                     </div>
                 </div>
