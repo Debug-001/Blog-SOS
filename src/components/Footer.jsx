@@ -14,7 +14,6 @@ const Footer = () => {
                 
                 <div class="addrs-itm">
                 <div class="col-lg-2 col-xs-2 col-sm-2 col-md-2">
-                	<i class="las la-map-marker-alt footr-itmff"></i>
                 </div>
                 <div className="footer-left">
                 <p>Mariam Nagar, Meerut Road, Delhi NCR : Telephone :01206666100</p>
@@ -23,7 +22,6 @@ const Footer = () => {
                 <div class="clearfix"></div>
                                 <div class="addrs-itm">
                 <div class="col-lg-2 col-xs-2 col-sm-2 col-md-2">
-                	<i class="las la-phone footr-itmff"></i>
                 </div>
                 <div class="col-lg-10 col-xs-10 col-sm-10 col-md-10 no-pad">
                 <p>Tel: 1800-123-3212</p>
@@ -72,7 +70,7 @@ const Footer = () => {
           
         </div>
         </div>
-        </div>
+        </div> 
         </footer>
       )
     }

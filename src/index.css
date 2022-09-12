@@ -3,6 +3,8 @@
   /* font-weight: bold; */
 }
 
+
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -14,7 +16,9 @@ html {
     margin-top: 3px;
 }
 
-
+.main-heading{
+  padding-top:40px;
+}
 .about-img{
   width: 80%;
 }
@@ -336,4 +340,3 @@ footer p {
   transform: scale(1.2);
   color:#ec615b;
 }
-

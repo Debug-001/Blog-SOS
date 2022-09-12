@@ -1,12 +1,14 @@
 import React from 'react'
 import Ab from '../assets/about.png'
+
+
 function About() {
     return (
         <div class="container-fluid mt-5 about-style" id="darpan">
             <div class="row">
                 <div class="col-md-10 col-12 mx-auto">
                     <h1 class="text-center main-heading">School Of Sciences</h1>
-                    <p class="text-center sub-heading">Christ University</p>
+                   
                     <div class="row">
                         <div class="col-md-6 col-12 hero-text ">
                             <figure>
