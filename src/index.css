@@ -3,6 +3,7 @@
   /* font-weight: bold; */
 }
 
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -49,6 +50,11 @@ h3 {
   border-bottom: 35px solid #18408b ;
 }
 
+.profile{
+  width: 20%;
+}
+
+
 .navbar-light .navbar-nav .nav-link {
   color:  #18408b !important ;
   text-transform: capitalize;
@@ -64,6 +70,7 @@ h3 {
 
 .top-text{
   margin-top: 8rem;
+  color: #18408b !important;
 }
 
 .-about-icon{
@@ -115,11 +122,109 @@ h3 {
 label {
   font-size: 1.7rem;
   letter-spacing: 0.2rem;
-  color: #777676;
+  color: #000000;
   text-transform: capitalize;
   margin-top: 1.5rem;
   margin-bottom: 5rem;
 }
+
+
+
+/* our services style starts  */
+
+.service-style {
+  margin-bottom: 10rem;
+}
+
+.box {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 4rem;
+}
+
+.our-services {
+  margin-top: 75px;
+  padding-bottom: 30px;
+  padding: 0 30px;
+  min-height: 198px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: rgb(217, 220, 222);
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0 0 25px 0 rgba(20, 27, 202, 0.17);
+}
+
+.our-services .icon {
+  margin-bottom: -21px;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.our-services h4 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.our-services:hover h4,
+.our-services:hover p {
+  color: #fff;
+}
+
+.speedup:hover {
+  box-shadow: 0 0 25px 0 rgba(33, 39, 221, 0.2);
+  cursor: pointer;
+  background-image: linear-gradient(-45deg, #f33474 0%, #f55b2a 50%);
+}
+
+.image{
+ width:170%;
+ margin-left: 110px;
+ border:  rgb(0, 0, 0) solid;
+ border-radius: 10px;
+ /* margin-top:13rem; */
+}
+
+#button{
+  margin-left: 45rem;
+}
+
+
+.settings:hover {
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  background-image: linear-gradient(-45deg, #49d0da 0%, #210c59 50%);
+}
+
+.privacy:hover {
+  box-shadow: 0 0 25px 0 rgba(20, 27, 201, 0.2);
+  cursor: pointer;
+  background-image: linear-gradient(-45deg, #5035ec 0%, #44a2f6 50%);
+}
+
+.backups:hover {
+  box-shadow: 0 0 25px 0 rgba(20, 27, 201, 0.2);
+  cursor: pointer;
+  background-image: linear-gradient(-45deg, #fd7f30 0%, #fdb642 50%);
+}
+
+.ssl:hover {
+  box-shadow: 0 0 25px 0 rgba(20, 27, 201, 0.2);
+  cursor: pointer;
+  background-image: linear-gradient(-45deg, #974eff 0%, #5a57fb 50%);
+}
+
+.database:hover {
+  box-shadow: 0 0 25px 0 rgba(20, 27, 201, 0.2);
+  cursor: pointer;
+  background-image: linear-gradient(-45deg, #27b88d 0%, #22dd73 50%);
+}
+/* our services style ends  */
+.row-sub{
+  margin-left: 20rem;
+}
+
 
 .hero-text p span {
   font-weight: bold;
@@ -143,7 +248,20 @@ label {
   border-radius: 90000px;
 }
 
+.button-icon{
+  padding-right: 10px !important;}
 
+
+.btn-primary{
+    border-radius: 10px !important;
+    padding-bottom: 10px !important;
+  }
+
+.top-text{
+  font-weight: bold;
+  color: black !important;
+  padding-bottom: 12px;
+}  
 
 .btn-style:hover{
   color: rgb(255, 255, 255) ;

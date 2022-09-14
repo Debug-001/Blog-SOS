@@ -4,8 +4,8 @@ import Logo from '../assets/logo.png'
 function Navbar() {
   const navigation = [
     {
-      text: "Darpan",
-      url: "/"
+      text: "Ideathon 5.0",
+      url: "#ideathon"
     },
     {
       text: "TechGenX",
@@ -46,6 +46,10 @@ function Navbar() {
     {
       text: "DSA",
       url: "/dsa"
+    },
+    {
+      text: "Corporate Interface Club",
+      url: "/cic"
     }
   ]
   return (

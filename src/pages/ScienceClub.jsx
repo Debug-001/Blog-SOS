@@ -1,38 +1,113 @@
-import React from 'react'
-import Navbar from '../components/Navbar' 
-import Clogo from '../assets/clogo.png'
-import Footer from '../components/Footer'
+import React from "react";
+import Navbar from "../components/Navbar";
+import Clogo from "../assets/clogo.png";
+import Footer from "../components/Footer";
+import Image from '../assets/profile.png';
+import Image1 from '../assets/sanskriti.png';
+import Image2 from '../assets/vs.png';
 
 const ScienceClub = () => {
   return (
     <div>
-      <Navbar/>
+      <Navbar />
       <div class="container-fluid mt-5 about-style" id="darpan">
-            <div class="row">
-                <div class="col-md-10 col-12 mx-auto">
-                    <h1 class="text-right main-heading" style={{"marginTop":"15rem"}}>Eulim Science Club</h1>
-                   
-                    <div class="row">
-                        <div class="col-md-6 col-12 hero-text ">
-                            <figure>
-                                <img src={Clogo} className="clogo" style={{"width": "80%", "marginTop": "-25rem"}} alt="herosection_image" />
-                            </figure>
-                        </div>
+        <div class="row">
+          <div class="col-md-10 col-12 mx-auto">
+            <h1
+              class="text-right main-heading"
+              style={{ marginTop: "15rem", "padding-right": "20px" }}
+            >
+              Eulim Science Club
+            </h1>
 
-                        <div class="col-md-6 col-12 hero-text  d-flex justify-content-center align-items-start flex-column">
-                            {/* <h1 className="top-text">Darpan 2022</h1> */}
-{/* 
-                            <p><span class="bold-style">Darpan </span>
-                               </p> */}
-                            {/* <button class="btn-style btn-primary"  onClick={(e) => { e.preventDefault(); window.location.href='http://google.com';}}>Read more</button> */}
+            <div class="row">
+              <div class="col-md-6 col-12 hero-text ">
+                <figure>
+                  <img src={Clogo}
+                    className="clogo"
+                    style={{
+                      width: "90%",
+                      marginTop: "-25rem",
+                      "padding-left": "0px",
+                    }}
+                    alt="herosection_image"
+                  />
+                </figure>
+              </div>
+              <div class="row-sub">
+                <div class="col-md-10 col-12 hero-text  d-flex justify-content-center align-items-center flex-column">
+                  <h1 className="text-center main-heading">The Science Club</h1>
+
+                  <p color="primary">
+                    <span class="bold-style"> EULIM Science club </span>
+                    is an initiative by the School of Sciences where the members
+                    with the help of the faculty incharges host vairous events.
+                    They plan and organize various activities and events related
+                    Science, Environment etc.., and also webinars.We also
+                    Organise a where other students get to display their science
+                    projects and models.
+                  </p>
+                  {/* E - Excellence
+U - Upstanding Performance
+L - Limitless
+I - Innovative
+M - Motivation */}
+                </div>
+              </div>
+              <div class="containee-fluid mt-5 service-style" id="serviceid">
+    <div class="row">
+        <div class="col-md-10  col-12 mx-auto">
+            <h1 class="text-center main-heading">Teacher Co-ordinators </h1>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="box">
+                        <div class="our-services settings">
+                            <div class="icon"> <img class="image" src={Image} alt="profile_image" /> </div>
+                            <h4>Dr STEPHENRAJ S</h4>
+                            <p style={{"padding-bottom":"30px"}} >MSc, PhD <small>(School of Sciences), Delhi NCR campus</small></p>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> 
         </div>
-        <Footer/>
-      </div>
-  )
-}
+        <div class="col-md-10  col-12 mx-auto">
+            <h1 class="text-center main-heading">Student Co-ordinators </h1>
 
-export default ScienceClub
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="box">
+                        <div class="our-services settings">
+                            <div class="icon"> <img class="image" src={Image1} alt="profile_image" /> </div>
+                            <h4>Sanskriti Saran</h4>
+                            <p style={{"padding-bottom":"30px"}}>Course: BCA (3BCANCR)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="box">
+                        <div class="our-services settings">
+                            <div class="icon"> <img class="image" src={Image2} alt="profile_image" /> </div>
+                            <h4>Vaishali Pant</h4>
+                            <p style={{"padding-bottom":"30px"}}>Course: BSC EMS (3EMS) </p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>
+                <div id="button"> <button class="btn-style btn-primary"   onClick={(e) => { e.preventDefault(); window.location.href="https://www.instagram.com/eulim_scienceclub/";}}>
+                    Follow us on Instagram
+                  </button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <Footer/>
+    </div>
+  );
+};
+
+export default ScienceClub;
