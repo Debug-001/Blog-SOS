@@ -47,11 +47,6 @@ const ScienceClub = () => {
                     Organise a where other students get to display their science
                     projects and models.
                   </p>
-                  {/* E - Excellence
-U - Upstanding Performance
-L - Limitless
-I - Innovative
-M - Motivation */}
                 </div>
               </div>
               <div class="containee-fluid mt-5 service-style" id="serviceid">
