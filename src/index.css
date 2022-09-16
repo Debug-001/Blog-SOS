@@ -74,10 +74,11 @@ h3 {
 }
 
 .-about-icon{
-  width:95%;
-  padding-left: 20px;
+  width:73%;
+  padding-left: 40px;
   padding-top: 40px;
   margin-top: 8rem;
+  margin-left: 2rem;
 }
 
 .event1-icon{
@@ -317,6 +318,13 @@ footer p {
   .nav-link{
     margin-left: 3rem ;
   }
+
+.icon3{
+  width:70%;
+  padding-left: 15px;
+  margin-left: 5rem;
+}
+
 
   .icon{
     display:flex;
