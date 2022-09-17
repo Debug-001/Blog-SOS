@@ -7,9 +7,9 @@ const Event2 = () => {
     <div class="row">
         <div class="col-md-10 col-12 mx-auto">
             <div class="row">
-                <div class="col-md-6 col-12 hero-text ">
+                <div class="col-md-6 col-12 hero-text " style={{maxWidth: "400px"}}>
                     <figure>
-                        <img src={Chess} className="chess-img" alt="herosection_image"/>
+                        <img src={Chess} className="img-fluid" alt="herosection_image"/>
                     </figure>
                 </div>
 

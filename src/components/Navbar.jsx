@@ -48,6 +48,18 @@ function Navbar() {
       url: "/dsa"
     },
     {
+      text: "Sports Club",
+      url: "/sportsclub"
+    },
+    {
+      text: "Technical Club",
+      url: "/technicalclub"
+    },
+    {
+      text: "Cultural Club",
+      url: "/culturalclub"
+    },
+    {
       text: "Corporate Interface Club",
       url: "/cic"
     }
