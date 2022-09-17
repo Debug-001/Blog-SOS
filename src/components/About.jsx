@@ -17,7 +17,7 @@ function About() {
                         </div>
 
                         <div class="col-md-6 col-12 hero-text  d-flex justify-content-center align-items-start flex-column">
-                            <h1 className="top-text">MOBILE-SHIKSHA</h1>
+                            <h1 style={{"margin-top":"6rem"}}>MOBILE-SHIKSHA</h1>
 
                             <p><span class="bold-style">Greetings from School of Sciences,  CHRIST (Deemed to be University) Delhi NCR. </span>
 
