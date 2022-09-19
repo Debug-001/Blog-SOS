@@ -60,7 +60,7 @@ const ScienceClub = () => {
                         <div class="our-services settings">
                             <div class="icon"> <img class="image" src={Image} alt="profile_image" /> </div>
                             <h4>Dr STEPHENRAJ S</h4>
-                            <p style={{"padding-bottom":"30px"}} >MSc, PhD <small>(School of Sciences), Delhi NCR campus</small></p>
+                            <p class="small" style={{"padding-bottom":"30px"}} >MSc, PhD <small>(School of Sciences), Delhi NCR campus</small></p>
                         </div>
                     </div>
                 </div>

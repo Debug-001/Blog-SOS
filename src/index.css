@@ -191,11 +191,21 @@ label {
   margin-left: 45rem;
 }
 
+.our-services{
+  background: linear-gradient(-45deg, #49d0da 0%, #210c59 50%);
+  color: white;
+  transition: all 0.5s ease-in-out ;
+}
+
+.small{
+  color: white !important;
+}
+
 
 .settings:hover {
   box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  background-image: linear-gradient(-45deg, #49d0da 0%, #210c59 50%);
+  background: linear-gradient(-45deg, #9bf904 0%, #fc0707 50%);
 }
 
 .privacy:hover {
@@ -268,6 +278,7 @@ label {
   color: rgb(255, 255, 255) ;
 
 }
+
 
 /* about us style starts  */
 
