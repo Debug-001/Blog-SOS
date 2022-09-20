@@ -21,7 +21,10 @@ margin-left: auto;
     /* height: 343px; */
     float: left;
     width: 100%;
+    margin-left: 22rem;
+    margin-bottom: 6rem;
 }
+
 
 .vsn-msn-bg4 {
     /* background: #F2F5FF; */
@@ -31,11 +34,12 @@ margin-left: auto;
 }
 
 .de-vsn-msn {
+  
     background: #fff;
-    float: left;
     width: 100%;
     padding: 15px 16px;
     border: 14px solid #f7f2ff;
+    display: flex;
 }
 
 .vsn-msn-bg-gr {
@@ -61,6 +65,9 @@ margin-left: auto;
 .vsn-3 h4 {
     color: #433C6D !important;
     text-transform: uppercase;
+    font-weight:bold;
+    letter-spacing: 1px;
+    font-size: 1.2em;
 }
 
 .vsn-msn-bx p {

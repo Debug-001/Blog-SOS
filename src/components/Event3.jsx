@@ -9,12 +9,12 @@ function Event3() {
             <div class="row">
                 <div class="col-md-6 col-12 hero-text ">
                     <figure>
-                        <img src={Ab} className="-about-icon" style={{ "margin-left": "15rem", "width": "60%" }} alt="herosection_image" />
+                        <img src={Ab} className="-about-icon" style={{ "margin-left": "15rem","margin-top": "3rem", "width": "60%" }} alt="herosection_image" />
                     </figure>
                 </div>
 
                 <div class="col-md-6 col-12 hero-text  d-flex justify-content-center align-items-start flex-column">
-                    <h1>Ideathon for Soceity 5.0</h1>
+                    <h1 style={{ "margin-top": "-3rem"}}>Ideathon for Soceity 5.0</h1>
 
                     <p><span class="bold-style"> Christ Innovation and Incubation Centre (CIIC)</span>
                         is organizing an event called <span class="bold-style">'Ideathon for Society 5.0'</span> on Saturday, 17th September 2022.
@@ -23,6 +23,7 @@ function Event3() {
                 </div>
             </div>
         </div>
+        
     )
 }
 

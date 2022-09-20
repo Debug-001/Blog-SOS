@@ -4,16 +4,16 @@ import Logo from '../assets/logo.png'
 function Navbar() {
   const navigation = [
     {
-      text: "Ideathon 5.0",
-      url: "#ideathon"
+      text: "Mobile-Siksha",
+      url: "#mb"
     },
     {
-      text: "TechGenX",
-      url: "#techgenx"
-    },
-    {
-      text: "Shah-Mat",
+      text: "ShahMat",
       url: "#shahmat"
+    },
+    {
+      text: "Ideathon",
+      url: "#ideathon"
     },
   ]
   const courses = [
@@ -65,12 +65,12 @@ function Navbar() {
     }
   ]
   return (
-    <div className="navigationcontainer-fluid navbar-style py-3">
+    <div className="navigationcontainer-fluid fixed-top navbar-style py-3">
       <div className="row">
         <img src={Logo} className="icon" alt="Christ University" />
 
         <div className="col-md-10 col-12 ml-auto">
-          <nav className="navbar navbar-expand-lg navbar-light">
+          <nav className="navbar navbar-expand-lg  navbar-light">
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>

@@ -1,6 +1,7 @@
 * {
   font-family: 'Roboto',sans-serif;
   /* font-weight: bold; */
+  transition: all 0.3s linear;
 }
 
 
@@ -38,6 +39,12 @@ h2 {
 
 h3 {
   font-size: 3rem;
+}
+
+.text-left{
+  font-size: 5rem !important;
+  margin-top: 10rem;
+  margin-bottom: 8rem;
 }
 
 .row {
@@ -95,7 +102,25 @@ h3 {
 }
 
 
+.row h2{
+  margin-top: 10rem;
+  font-size: 4.5rem;
+  color: #18408b;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
 
+.subclass{
+  margin-top: 3rem;
+  font-size: 16px;
+  line-height: 27px;
+}
+
+
+.faculty {
+  max-width: 500px;
+  margin: 12rem auto;
+}
 
 .navbar-light .navbar-nav .nav-link:hover {
   color: #0381ff !important;
@@ -130,7 +155,6 @@ label {
 }
 
 
-
 /* our services style starts  */
 
 .service-style {
@@ -138,6 +162,7 @@ label {
 }
 
 .box {
+  /* margin-left: 30rem; */
   position: relative;
   width: 100%;
   padding-right: 15px;
@@ -145,8 +170,10 @@ label {
   padding-top: 4rem;
 }
 
+
+
 .our-services {
-  margin-top: 75px;
+  margin-top: 115px;
   padding-bottom: 30px;
   padding: 0 30px;
   min-height: 198px;
@@ -181,20 +208,19 @@ label {
 
 .image{
  width:170%;
- margin-left: 110px;
+ margin-left: 150px;
  border:  rgb(0, 0, 0) solid;
  border-radius: 10px;
  /* margin-top:13rem; */
 }
 
 #button{
-  margin-left: 45rem;
+  margin-left: 60rem;
 }
 
 .our-services{
   background: linear-gradient(-45deg, #49d0da 0%, #210c59 50%);
   color: white;
-  transition: all 0.5s ease-in-out ;
 }
 
 .small{

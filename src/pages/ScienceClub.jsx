@@ -11,24 +11,11 @@ const ScienceClub = () => {
     <div>
       <Navbar />
       <div class="container-fluid mt-5 about-style" id="darpan">
-        <div class="row">
-          <div class="col-md-10 col-12 mx-auto">
-            <h1
-              class="text-right main-heading"
-              style={{ marginTop: "15rem", "padding-right": "20px" }}
-            >
-              Eulim Science Club
-            </h1>
-
             <div class="row">
               <div class="col-md-6 col-12 hero-text ">
                 <figure>
                   <img src={Clogo}
-                    className="clogo"
-                    style={{
-                      width: "90%",
-                      marginTop: "-25rem",
-                      "padding-left": "0px",
+                    className="clogo" style={{ width: "90%", marginTop: "-25rem", "padding-left": "0px"
                     }}
                     alt="herosection_image"
                   />
@@ -36,9 +23,9 @@ const ScienceClub = () => {
               </div>
               <div class="row-sub">
                 <div class="col-md-10 col-12 hero-text  d-flex justify-content-center align-items-center flex-column">
-                  <h1 className="text-center main-heading">The Science Club</h1>
+                  <h1 style={{ "margin-top": "-6rem","margin-left": "10rem"}} className="text-center main-heading">Eulim Science Club</h1>
 
-                  <p color="primary">
+                  <p style={{"margin-left": "13rem","margin-top":"4rem"}} color="primary">
                     <span class="bold-style"> EULIM Science club </span>
                     is an initiative by the School of Sciences where the members
                     with the help of the faculty incharges host vairous events.
@@ -56,8 +43,8 @@ const ScienceClub = () => {
 
             <div class="row">
                 <div class="col-md-6">
-                    <div class="box">
-                        <div class="our-services settings">
+                    <div class="box" style={{"margin-left":"30rem"}}>
+                        <div class="our-services ssl">
                             <div class="icon"> <img class="image" src={Image} alt="profile_image" /> </div>
                             <h4>Dr STEPHENRAJ S</h4>
                             <p class="small" style={{"padding-bottom":"30px"}} >MSc, PhD <small>(School of Sciences), Delhi NCR campus</small></p>
@@ -72,7 +59,7 @@ const ScienceClub = () => {
             <div class="row">
                 <div class="col-md-6">
                     <div class="box">
-                        <div class="our-services settings">
+                        <div class="our-services privacy">
                             <div class="icon"> <img class="image" src={Image1} alt="profile_image" /> </div>
                             <h4>Sanskriti Saran</h4>
                             <p style={{"padding-bottom":"30px"}}>Course: BCA (3BCANCR)</p>
@@ -81,7 +68,7 @@ const ScienceClub = () => {
                 </div>
                 <div class="col-md-6">
                     <div class="box">
-                        <div class="our-services settings">
+                        <div class="our-services database">
                             <div class="icon"> <img class="image" src={Image2} alt="profile_image" /> </div>
                             <h4>Vaishali Pant</h4>
                             <p style={{"padding-bottom":"30px"}}>Course: BSC EMS (3EMS) </p>
@@ -98,8 +85,6 @@ const ScienceClub = () => {
                 </div>
             </div>
           </div>
-        </div>
-      </div>
       <Footer/>
     </div>
   );
