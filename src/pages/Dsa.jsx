@@ -1,10 +1,11 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import Clogo from "../assets/clogo.png";
 import Footer from "../components/Footer";
 import Image1 from '../assets/t1.png';
 import Image2 from '../assets/t2.png';
 import Image3 from '../assets/t3.png';
+import Image4 from '../assets/abbas.png';
+import Image5 from '../assets/aseem.png';
 
 const DSA = () => {
   return (
@@ -71,8 +72,8 @@ const DSA = () => {
                 <div class="col-md-6">
                     <div class="box">
                         <div class="our-services privacy">
-                            <div class="icon"> <img class="image" src="" alt="profile_image" /> </div>
-                            <h4>Mohammad Abbaz</h4>
+                            <div class="icon"> <img class="image" src={Image4} alt="profile_image" /> </div>
+                            <h4>Mohammad Abbas Kazmi</h4>
                             <p style={{"padding-bottom":"30px"}}>Course: BCA (3BCANCR)</p>
                         </div>
                     </div>
@@ -80,10 +81,10 @@ const DSA = () => {
                 <div class="col-md-6">
                     <div class="box">
                         <div class="our-services database">
-                            <div class="icon"> <img class="image" src="" alt="profile_image" /> </div>
+                            <div class="icon"> <img class="image" src={Image5} alt="profile_image" /> </div>
                             <h4>Aseem Sharma</h4>
                             <p style={{"padding-bottom":"30px"}}>Course: BCA(3BCANCR)</p>
-                        </div>
+                        </div> 
                     </div>
                 </div>
             </div> 
