@@ -56,8 +56,10 @@ m-text {
   margin-right: 200rem;
 }
 
-.mission {
-  font-size: 3rem;
+.mission{
+  font-size:3rem !important;
   font-weight: bold;
-  margin-top: 3rem;
+  margin-top:  3rem !important;
+  color: white !important;
 }
+

@@ -13,10 +13,10 @@ const Event2 = () => {
                 <div class="col-md-6 col-12 hero-text  d-flex justify-content-center align-items-start flex-column">
                     <h1>Shah-Mat</h1>
 
-                    <p><span class="bold-style">  Chess is everything : art, culture, science and sport."♟</span>
+                    <p><span class="bold">  Chess is everything : art, culture, science and sport."♟
                    with these great words by Anataly Karpov ,
    Christ University School of Business & Management and School of Sciences* invite everyone to sharpen your brain while having fun.
-  So let's play a game of chess in *"Sheh-Maat 2022"* , a *Chess Tournament* being organized at the departmental level .</p>
+  So let's play a game of chess in *"Sheh-Maat 2022"* , a *Chess Tournament* being organized at the departmental level .</span></p>
                     <button class="btn-style btn-primary"  onClick={(e) => { e.preventDefault(); window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSfGB4_yPPxakuaiSVA6fiYXguagmlaCZLPe3HxuMlSj6wXVrQ/closedform';}}>Read more</button>
                 </div>
             </div>

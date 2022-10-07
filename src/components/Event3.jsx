@@ -17,8 +17,9 @@ function Event3() {
                     <h1 style={{ "margin-top": "-3rem"}}>Ideathon for Soceity 5.0</h1>
 
                     <p><span class="bold-style"> Christ Innovation and Incubation Centre (CIIC)</span>
-                        is organizing an event called <span class="bold-style">'Ideathon for Society 5.0'</span> on Saturday, 17th September 2022.
-                        Some stalls will also be set up on the new basketball court, which will be an opportunity for all the small business owners and budding entrepreneurs to promote their business, be it food, product sales, or services. Since the number of stalls will be limited, they will be allotted on a first come first serve basis.</p>
+                    <span class="bold-style"> is organizing an event called'Ideathon for Society 5.0' on Saturday, 17th September 2022.
+                        Some stalls will also be set up on the new basketball court, which will be an opportunity for all the small business owners and budding entrepreneurs to promote their business, be it food, product sales, or services. Since the number of stalls will be limited, they will be allotted on a first come first serve basis.
+                        </span></p>
                     <button class="btn-style btn-primary" onClick={(e) => { e.preventDefault(); window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSdJmKi2SWWRbUDn1SZo_iD-turNw4c73TF3EQsRQ5oEyTdSVw/viewform'; }}>Read more</button>
                 </div>
             </div>

@@ -10,7 +10,7 @@ const ScienceClub = () => {
   return (
     <div>
       <Navbar />
-      <div class="container-fluid mt-5 about-style" id="darpan">
+      <div class="container-fluid mt-5 about-style">
             <div class="row">
               <div class="col-md-6 col-12 hero-text ">
                 <figure>
@@ -25,21 +25,22 @@ const ScienceClub = () => {
                 <div class="col-md-10 col-12 hero-text  d-flex justify-content-center align-items-center flex-column">
                   <h1 style={{ "margin-top": "-6rem","margin-left": "10rem"}} className="text-center main-heading">Eulim Science Club</h1>
 
-                  <p style={{"margin-left": "13rem","margin-top":"4rem"}} color="primary">
-                    <span class="bold-style"> EULIM Science club </span>
+                  <p class="imp">
+                    <span class="bold"> EULIM Science club 
                     is an initiative by the School of Sciences where the members
                     with the help of the faculty incharges host vairous events.
                     They plan and organize various activities and events related
                     Science, Environment etc.., and also webinars.We also
                     Organise a where other students get to display their science
                     projects and models.
+                    </span>
                   </p>
                 </div>
               </div>
               <div class="containee-fluid mt-5 service-style" id="serviceid">
     <div class="row">
         <div class="col-md-10  col-12 mx-auto">
-            <h1 class="text-center main-heading">Teacher Co-ordinators </h1>
+            <h1 class="text-center main-heading">Faculty Co-ordinators </h1>
 
             <div class="row">
                 <div class="col-md-6">

@@ -2,7 +2,9 @@ import React from 'react'
 
 const Cic = () => {
   return (
-    <div>Cic</div>
+    <div>Cic
+      <h1>Under dev</h1>
+    </div>
   )
 }
 

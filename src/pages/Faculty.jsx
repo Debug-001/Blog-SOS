@@ -76,6 +76,7 @@ export default function faculty(){
     },
   ]
     return (
+     <div> 
       <div className="faculty">
               <Navbar/>
             <h1 className='text-center main-heading'>Faculty List</h1>
@@ -94,7 +95,8 @@ export default function faculty(){
                     ))
                   }
             </ul>
-            <Footer/>
         </div>
+         <Footer/>
+         </div>
     )
   }
