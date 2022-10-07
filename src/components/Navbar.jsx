@@ -1,8 +1,22 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import Logo from '../assets/logo.png'
+import { Disclosure, Transition } from '@headlessui/react'
+import { useLocation, useNavigate } from 'react-router'
+
+import { FaBars, FaArrowLeft  } from 'react-icons/fa'
+import { MdOutlineClear  } from 'react-icons/md'
 
 function Navbar() {
+  const location = useLocation()
+  const navigate = useNavigate()
   const navigation = [
+	{ name: 'Home', href: '/',  available: 1 },
+	{ name: 'Clubs', href: '/',  available: 1 },
+	{ name: 'Courses', href: '/',  available: 1 },
+	{ name: 'Upcoming Events', href: '/',  available: 1 },
+	{ name: 'Faculty List', href: '/faculty',  available: 1 },
+]
+  const events = [
     {
       text: "Mobile-Siksha",
       url: "#mb"
@@ -65,70 +79,92 @@ function Navbar() {
     }
   ]
   return (
-    <div className="navigationcontainer-fluid fixed-top navbar-style py-3">
-      <div className="row">
-        <img src={Logo} className="icon" alt="Christ University" />
+    <Disclosure as="nav" className="bg-white py-2 sticky top-0 left-0 z-50 shadow-md border-primary border-b-[20px]" id="header">
+			{({ open }) => (
+				<div>
+					<div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+						<div className="relative flex items-center justify-between h-16">
+							<div className="absolute inset-y-0 left-0 flex items-center md:hidden">
+								{location.pathname !== "/" && (
+									<div className="inline-flex items-center justify-center p-2 rounded-md text-primary hover:text-primaryLight  focus:outline-none">
+										<FaArrowLeft onClick={() => {
+											navigate(-1)
+										}}  className="block h-6 w-6" aria-hidden="true" />
+									</div>)
+								}
+							</div>
+							<div className="flex-1 flex items-center justify-center md:items-center md:justify-between">
+								<a className="flex-shrink-0 flex items-center" href="/">
+									<img
+										className="block h-12 w-auto"
+										src={Logo}
+										alt="christ logo"
+									/>
+								</a>
+								<div className="hidden md:block md:ml-6">
+									<div className="flex space-x-4">
+										{navigation.map((item) => (
+											<a
+												key={item.name}
+												href={item.href}
+												onClick={() => {
+													if (item.available === 0) {
+														alert("Coming Soon")
+													}
+												}}
+												className='text-primary hover:text-primaryLight px-3 py-2  text-md font-medium transition-colors'
 
-        <div className="col-md-10 col-12 ml-auto">
-          <nav className="navbar navbar-expand-lg  navbar-light">
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul className="navbar-nav ml-auto">
-                <li className="nav-item active">
-                  <a className="nav-link" href="/">Home
-                    <span className="sr-only"></span></a>
-                </li>
-                <li className="nav-item dropdown">
-                  <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
-                    Clubs
-                  </a>
-
-                  <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                    {clubs.map(item => (
-                      <a className="dropdown-item" href={item.url}>{item.text}</a>
-                    ))}
-                  </div>
-                </li>
-                <li className="nav-item dropdown">
-                  <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
-                    Courses
-                  </a>
-
-                  <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                    {courses.map(item => (
-                      <a className="dropdown-item" href={item.url}>{item.text}</a>
-                    ))}
-                  </div>
-                </li>
-                <li className="nav-item dropdown">
-                  <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
-                    Upcoming Events
-                  </a>
-
-                  <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                    {navigation.map(item => (
-                      <a className="dropdown-item" href={item.url}>{item.text}</a>
-                    ))}
-                  </div>
-                </li>
-                <li className="nav-item dropdown">
-                  <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
-                    Faculty List
-                  </a>
-                  <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a className="dropdown-item" href="/faculty">School Of Sciences</a>
-                    <a className="dropdown-item" href="https://ncr.christuniversity.in/faculty-list">Christ University</a>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </nav>
-
-        </div>
-      </div>
-    </div>
+											>
+												{item.name}
+											</a>
+										))}
+									</div>
+								</div>
+							</div>
+							<div className="absolute inset-y-0 right-0 flex items-center md:hidden">
+								<Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-primary hover:text-primaryLight  focus:outline-none">
+									<span className="sr-only">Open main menu</span>
+									{open ? (
+										<MdOutlineClear className="block h-6 w-6" aria-hidden="true" />
+									) : (
+										<FaBars className="block h-6 w-6" aria-hidden="true" />
+									)}
+								</Disclosure.Button>
+							</div>
+						</div>
+					</div>
+					<Transition
+						as={Fragment}
+						enter="transition ease-out duration-100"
+						enterFrom="transform opacity-0 scale-95"
+						enterTo="transform opacity-100 scale-100"
+						leave="transition ease-in duration-75"
+						leaveFrom="transform opacity-100 scale-100"
+						leaveTo="transform opacity-0 scale-95"
+					>
+						<Disclosure.Panel className="md:hidden">
+							<div className="px-2 pt-2 pb-3 space-y-1">
+								{navigation.map((item) => (
+									<Disclosure.Button
+										key={item.name}
+										as="a"
+										onClick={() => {
+											if (item.available === 0) {
+												alert("Coming Soon")
+											}
+										}}
+										href={item.href}
+										className='text-primary hover:text-primaryLight block px-3 py-2 text-base font-medium transition-colors'
+									>
+										{item.name}
+									</Disclosure.Button>
+								))}
+							</div>
+						</Disclosure.Panel>
+					</Transition>
+				</div>
+			)}
+		</Disclosure>
   )
 }
 

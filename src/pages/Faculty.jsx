@@ -76,24 +76,27 @@ export default function faculty(){
     },
   ]
     return (
-      <div className="faculty">
+      <div className="">
               <Navbar/>
-            <h1 className='text-center main-heading'>Faculty List</h1>
-            <ul className='list-group w-auto'>
+            <div className="max-w-5xl mx-auto my-10">
+
+            <h1 className='text-4xl md:text-5xl lg:text-6xl text-primary font-bold mt-6 text-center mb-10'>Faculty List</h1>
+            <ul className='mx-auto max-w-3xl'>
                 {
                   faculty.map((listItem) => (
-                    <li className='list-group-item list-group-item-action d-flex gap-3 py-3'>
-                      <div className="rounded-circle flex-shrink-0">
-                            <img src={listItem.img} className="faculty-image" alt={listItem.name} style={{marginRight: "1.5rem"}} width={90} height={90} />
+                    <li className='flex border border-slate-400 gap-4 py-2 px-4 items-center'>
+                      <div className="">
+                            <img src={listItem.img} className="rounded-full" alt={listItem.name}width={90} height={90} />
                       </div>
-                            <div className='faculty-details'>
-                            <p>{listItem.name}</p>
-                            <p>{listItem.post}</p>
+                            <div className=''>
+                            <p className='text-lg font-medium mb-2'>{listItem.name}</p>
+                            <p className='text-md text-slate-600'>{listItem.post}</p>
                             </div>
                         </li>
                     ))
                   }
             </ul>
+                  </div>
             <Footer/>
         </div>
     )

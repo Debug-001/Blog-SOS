@@ -1,5 +1,4 @@
 import React from 'react'
-import './footer.css'
 import { MdOutlineLocationOn } from 'react-icons/md'
 import { IoCallOutline } from 'react-icons/io5'
 import { FiMail } from 'react-icons/fi'
@@ -7,34 +6,41 @@ import { IoEarth } from 'react-icons/io5'
 
 const Footer = () => {
     return (
-        <footer class="page-footer font-small blue pt-4">
-            <div class="container-fluid text-center text-md-left">
-                <div class="row">
-                    <div style={{"margin-left":"8rem"}}  class="col-md-6 mt-md-0 mt-3">
-                        <h1 class="h1" style={{ "margin-left": "15rem", "margin-top": "3rem", "font-size": "30px", "font-weight": "bold" }}>CHRIST</h1>
-                        <p class="smal"  style={{ "margin-left": "-23rem" }}>(Deemed to be University)</p>
-                        <div className="footer__socials">
-                            <a class="footer_icons" href="https://www.google.com/maps/place/CHRIST+(Deemed+to+be+University)+Delhi+NCR/@28.6832252,77.409954,15z/data=!4m5!3m4!1s0x0:0xdc407fcde59a0d0f!8m2!3d28.6832252!4d77.409954"><MdOutlineLocationOn /> <p class="footer-text">Mariam Nagar, Meerut Road, Delhi NCR
-                                Ghaziabad - 201003
-                            </p> </a>
-                            <a class="footer_icons" href="tel:180-012-33212"><IoCallOutline /><p class="footer-text1">Tel: 1800-123-3212</p></a>
-                            <a class="footer_icons" href="mailto:mail.ncr@christuniversity.in"><FiMail /><p class="footer-text2">Email: mail.ncr@christuniversity.in</p></a>
-                            <a class="footer_icons" href="http://www.ncr.christuniversity.in"><IoEarth /><p class="footer-text3">Web: http://www.ncr.christuniversity.in</p></a>
-                        </div>
+        <footer className='bg-primaryDark text-white p-10'>
+            <div className="flex flex-wrap md:flex-nowrap mb-10">
+                <div className="max-w-5xl mx-auto">
+                    <h2 className='text-2xl font-bold'>Christ</h2>
+                    <p>(Deemed to be university)</p>
+                    <div className="flex gap-6 items-center my-4 text-md">
+                        <MdOutlineLocationOn/>
+                        <p>Mariam Nagar, Meerut Road, Delhi NCR <br />Ghaziabad - 201003 <br />Telephone :01206666100</p>
                     </div>
-                    <div style={{"margin-left":"15rem"}} class="col-md-3 mb-md-0 mb-3">
-                        <ul class="list-unstyled">
-                            <li>
-                                <h1 class="vison">Vision</h1>
-                                <p class="vison1" style={{ "text-align": "inherit" }}>EXCELLENCE AND SERVICE</p>
-                                <h2 class="mission">Mission</h2><p class="mission1" style={{ "text-align": "inherit" }}>
-                                    CHRIST (Deemed to be University) is a nurturing ground for an individual's holistic development to make effective contribution to the society in a dynamic environment.</p>
-                            </li>
-                        </ul>
+                    <div className="flex gap-6 items-center my-4 text-md">
+                        <IoCallOutline/>
+                        <p>Tel: 1800-123-3212</p>
+                    </div>
+                    <div className="flex gap-6 items-center my-4 text-md">
+                        <FiMail/>
+                        <p>Email: mail.ncr@christuniversity.in</p>
+                    </div>
+                    <div className="flex gap-6 items-center my-4 text-md">
+                        <IoEarth/>
+                        <p>Web: http://www.ncr.christuniversity.in</p>
                     </div>
                 </div>
+                <div className="max-w-5xl mx-auto">
+                    <div className="mb-20">
+                    <h2 className='text-2xl font-bold'>Vision</h2>
+                    <p>EXCELLENCE AND SERVICE</p>
+                    </div>
+                    <div className="max-w-sm">
+                    <h2 className='text-2xl font-bold'>Misson</h2>
+                    <p className='text-justify'>CHRIST (Deemed to be University) is a nurturing ground for an individual's holistic development to make effective contribution to the society in a dynamic environment.</p>
+                    </div>
+
+                </div>
             </div>
-            <div class="footer-copyright text-center py-1"><h1 style={{ "font-size": "17px", "margin-top": "3rem" }}>Copyright © CHRIST (Deemed to be University) 2020</h1><p>Website developed by <a href="http://ombhatt.com">Om Sharma</a>, <a href="https://samyak003.in">Samyak Jain</a>, Mohammad Abbas.</p>
+                 <div className="text-center"><p className='mb-4'>Copyright © CHRIST (Deemed to be University) 2020</p><p>Website developed by <a className='text-primaryLight hover:underline' href="http://ombhatt.com">Om Sharma</a>, <a className='text-primaryLight hover:underline' href="https://samyak003.in">Samyak Jain</a>, Mohammad Abbas.</p>
             </div>
         </footer>
 
