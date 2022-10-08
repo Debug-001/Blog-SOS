@@ -48,18 +48,18 @@ const DSA = () => {
                 <div class="col-md-6">
                     <div class="box">
                         <div class="our-services ssl">
-                            <div class="icon"> <img class="image" src={Image2} alt="profile_image" /> </div>
-                            <h4>Dr. Ashish Sharma</h4>
-                            <p class="small" style={{"padding-bottom":"30px"}}>Associate Professor</p>
+                            <div class="icon"> <img class="image" src={Image3} alt="profile_image" /> </div>
+                            <h4>Dr. Varuna Gupta</h4>
+                            <p class="small" style={{"padding-bottom":"30px"}}>Assistant Professor</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="box" style={{"margin-left":"30rem"}}>
                         <div class="our-services ssl">
-                            <div class="icon"> <img class="image" src={Image3} alt="profile_image" /></div>
-                            <h4>Dr. Varuna Gupta</h4>
-                            <p class="small" style={{"padding-bottom":"30px"}}>Assistant Professor</p>
+                            <div class="icon"> <img class="image" src={Image2} alt="profile_image" /></div>
+                            <h4> Dr. Ashish Sharma</h4>
+                            <p class="small" style={{"padding-bottom":"30px"}}>Associate Professor</p>
                         </div>
                     </div>
                 </div>
