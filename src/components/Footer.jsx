@@ -40,7 +40,7 @@ const Footer = () => {
 
                 </div>
             </div>
-                 <div className="text-center"><p className='mb-4'>Copyright © CHRIST (Deemed to be University) 2020</p><p>Website developed by <a className='text-primaryLight hover:underline' href="http://ombhatt.com">Om Sharma</a>, <a className='text-primaryLight hover:underline' href="https://samyak003.in">Samyak Jain</a>, Mohammad Abbas.</p>
+                 <div className="text-center"><p className='mb-4'>Copyright © CHRIST (Deemed to be University) 2020</p><p>Website developed by <a className='text-primaryLight hover:underline' href="http://ombhatt.com">Om Sharma</a>, <a className='text-primaryLight hover:underline' href="https://samyak003.in">Samyak Jain</a></p>
             </div>
         </footer>
 
