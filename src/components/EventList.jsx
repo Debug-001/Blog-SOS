@@ -31,7 +31,7 @@ export default function EventList({ max }) {
 			const events_ = events.slice(0, max);
 			setEvents(events_);
 		}
-	}, [max, events]);
+	}, [max]);
 	return (
 		<div className="p-10 pt-0">
 			{events.map(({ name, description, url, image }) => (

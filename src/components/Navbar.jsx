@@ -44,18 +44,18 @@ function Navbar() {
 			text: "Sports Club",
 			url: "/sportsclub",
 		},
-		{
-			text: "Technical Club",
-			url: "/technicalclub",
-		},
-		{
-			text: "Cultural Club",
-			url: "/culturalclub",
-		},
-		{
-			text: "Corporate Interface Club",
-			url: "/cic",
-		},
+		// {
+		// 	text: "Technical Club",
+		// 	url: "/technicalclub",
+		// },
+		// {
+		// 	text: "Cultural Club",
+		// 	url: "/culturalclub",
+		// },
+		// {
+		// 	text: "Corporate Interface Club",
+		// 	url: "/cic",
+		// },
 	];
 	const fList = [
 		{
@@ -74,6 +74,16 @@ function Navbar() {
 		{ name: "Courses", href: "/", available: 1, dropdown: courses },
 		{ name: "Faculty List", href: "/faculty", available: 1, dropdown: fList },
 	];
+	const toggleDropdown = (item, mobile = false) => {
+		const dropdownType = mobile ? "dropdownMobile" : "dropdown";
+		document.querySelectorAll(".dropdown").forEach((dropdown) => {
+			if (dropdown.id !== dropdownType + item.name.replace(/ /g, ""))
+				dropdown.classList.add("hidden");
+		});
+		document
+			.querySelector("#" + dropdownType + item.name.replace(/ /g, ""))
+			.classList.toggle("hidden");
+	};
 	return (
 		<Disclosure
 			as="nav"
@@ -128,21 +138,17 @@ function Navbar() {
 													<div className="relative">
 														<button
 															onClick={() => {
-																document
-																	.querySelector(
-																		"#dropdown" + item.name.replace(/ /g, ""),
-																	)
-																	.classList.toggle("hidden");
+																toggleDropdown(item);
 															}}
 															key=""
-															className="text-primary hover:text-primaryLight block px-3 py-2 text-base font-medium transition-colors dropdown hover:bg-slate-200 rounded"
+															className="text-primary hover:text-primaryLight block px-3 py-2 text-base font-medium transition-colors hover:bg-slate-200 rounded"
 														>
 															<div className="flex items-center gap-1">
 																{item.name} <FaCaretDown />
 															</div>
 														</button>
 														<div
-															className="absolute hidden float-none top-full bg-white left-0 z-50 flex flex-col w-max max-w-[15rem] px-2 py-1 m-2 text-left list-none border border-1 border-gray-400 rounded "
+															className="absolute hidden float-none top-full bg-white left-0 z-50 flex flex-col w-max max-w-[15rem] px-2 py-1 m-2 text-left list-none border border-1 border-gray-400 rounded dropdown"
 															aria-labelledby="navbarDropdown"
 															id={"dropdown" + item.name.replace(/ /g, "")}
 														>
@@ -213,21 +219,17 @@ function Navbar() {
 											<div className="relative">
 												<button
 													onClick={() => {
-														document
-															.querySelector(
-																"#dropdownMobile" + item.name.replace(/ /g, ""),
-															)
-															.classList.toggle("hidden");
+														toggleDropdown(item, true);
 													}}
 													key=""
-													className="text-primary hover:text-primaryLight block px-3 py-2 text-base font-medium transition-colors dropdown"
+													className="text-primary hover:text-primaryLight block px-3 py-2 text-base font-medium transition-colors"
 												>
 													<div className="flex items-center gap-1">
 														{item.name} <FaCaretDown />
 													</div>
 												</button>
 												<div
-													className="absolute hidden float-none top-full bg-white left-0 z-50 flex flex-col w-max max-w-[15rem] px-2 py-1 m-2 text-left list-none border border-1 border-gray-400 rounded "
+													className="absolute hidden float-none top-full bg-white left-0 z-50 flex flex-col w-max max-w-[15rem] px-2 py-1 m-2 text-left list-none border border-1 border-gray-400 rounded dropdown"
 													aria-labelledby="navbarDropdown"
 													id={"dropdownMobile" + item.name.replace(/ /g, "")}
 												>
