@@ -1,11 +1,8 @@
 import React from "react";
-import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import Image from "../assets/shilpa srivastava.png";
-import Image1 from "../assets/varuna gupta.png";
-import Image2 from "../assets/ashish sharma.png";
+import Navbar from "../components/Navbar";
 
-const Dsa = () => {
+export default function SportsClub() {
 	return (
 		<div>
 			<Navbar />
@@ -15,7 +12,7 @@ const Dsa = () => {
 						<img src="#" alt="dsa club logo" className="w-100" />
 					</div>
 					<h1 className="text-4xl md:text-5xl lg:text-6xl text-primary font-bold mt-6 text-center">
-						DEPARTMENTAL SOCIAL ACTION
+						SPORTS CLUB
 					</h1>
 				</div>
 				<section className="p-10">
@@ -35,36 +32,25 @@ const Dsa = () => {
 					<div className="flex md:flex-row flex-col gap-10 justify-evenly">
 						<div class="text-center">
 							<img
-								src={Image}
+								src=""
 								class="rounded-full w-32 h-32 object-cover mb-4 mx-auto"
 								alt="Avatar"
 							/>
 							<h5 class="text-2xl font-medium leading-tight mb-2">
-								Shilpa Srivastava
+								CHANDRAKETU SINGH
 							</h5>
-							<p class="text-gray-500 text-lg">BCA (3BCANCR)</p>
+							<p class="text-gray-500 text-lg">Lorem, ipsum dolor.</p>
 						</div>
 						<div class="text-center">
 							<img
-								src={Image1}
+								src=""
 								class="rounded-full w-32 h-32 object-cover mb-4 mx-auto"
 								alt="Avatar"
 							/>
 							<h5 class="text-2xl font-medium leading-tight mb-2">
-								Varuna Gupta
+								VANDANA MEHNDIRATTA
 							</h5>
-							<p class="text-gray-500 text-lg">BCA (3BCANCR)</p>
-						</div>
-						<div class="text-center">
-							<img
-								src={Image2}
-								class="rounded-full w-32 h-32 object-cover mb-4 mx-auto"
-								alt="Avatar"
-							/>
-							<h5 class="text-2xl font-medium leading-tight mb-2">
-								Ashish Sharma
-							</h5>
-							<p class="text-gray-500 text-lg">BCA (3BCANCR)</p>
+							<p class="text-gray-500 text-lg">Lorem, ipsum dolor.</p>
 						</div>
 					</div>
 				</section>
@@ -80,7 +66,7 @@ const Dsa = () => {
 								alt="Avatar"
 							/>
 							<h5 class="text-2xl font-medium leading-tight mb-2">
-								Mohammad Abbaz
+								Harshit Bisht
 							</h5>
 							<p class="text-gray-500 text-lg">BCA (3BCANCR)</p>
 						</div>
@@ -91,9 +77,9 @@ const Dsa = () => {
 								alt="Avatar"
 							/>
 							<h5 class="text-2xl font-medium leading-tight mb-2">
-								Aseem Sharma
+								Nimisha Singh
 							</h5>
-							<p class="text-gray-500 text-lg">BCA (3BCANCR)</p>
+							<p class="text-gray-500 text-lg">BDA (3BDANCR)</p>
 						</div>
 					</div>
 				</section>
@@ -101,6 +87,4 @@ const Dsa = () => {
 			<Footer />
 		</div>
 	);
-};
-
-export default Dsa;
+}
