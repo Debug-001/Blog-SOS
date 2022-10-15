@@ -1,35 +1,14 @@
 import React, { Fragment } from "react";
 import Logo from "../assets/logo.png";
-import { Disclosure, Popover, Transition } from "@headlessui/react";
+import { Disclosure, Transition } from "@headlessui/react";
 import { useLocation, useNavigate } from "react-router";
 
-import {
-	FaBars,
-	FaArrowLeft,
-	FaArrowDown,
-	FaArrowCircleDown,
-	FaCaretDown,
-} from "react-icons/fa";
+import { FaBars, FaArrowLeft, FaCaretDown } from "react-icons/fa";
 import { MdOutlineClear } from "react-icons/md";
-import { useEffect } from "react";
 
 function Navbar() {
 	const location = useLocation();
 	const navigate = useNavigate();
-	const events = [
-		{
-			text: "Mobile-Siksha",
-			url: "#mb",
-		},
-		{
-			text: "ShahMat",
-			url: "#shahmat",
-		},
-		{
-			text: "Ideathon",
-			url: "#ideathon",
-		},
-	];
 	const courses = [
 		{
 			text: "Master of Computer Applications (MCA)",
@@ -90,9 +69,9 @@ function Navbar() {
 	];
 	const navigation = [
 		{ name: "Home", href: "/", available: 1 },
+		{ name: "Events", href: "/events", available: 1 },
 		{ name: "Clubs", href: "/", available: 1, dropdown: clubs },
 		{ name: "Courses", href: "/", available: 1, dropdown: courses },
-		{ name: "Upcoming Events", href: "/", available: 1, dropdown: events },
 		{ name: "Faculty List", href: "/faculty", available: 1, dropdown: fList },
 	];
 	return (
@@ -139,7 +118,7 @@ function Navbar() {
 																alert("Coming Soon");
 															}
 														}}
-														className="text-primary hover:text-primaryLight px-3 py-2  text-md font-medium transition-colors"
+														className="text-primary hover:text-primaryLight px-3 py-2  text-md font-medium transition-colors hover:bg-slate-200 rounded"
 													>
 														{item.name}
 													</a>
@@ -156,7 +135,7 @@ function Navbar() {
 																	.classList.toggle("hidden");
 															}}
 															key=""
-															className="text-primary hover:text-primaryLight block px-3 py-2 text-base font-medium transition-colors dropdown"
+															className="text-primary hover:text-primaryLight block px-3 py-2 text-base font-medium transition-colors dropdown hover:bg-slate-200 rounded"
 														>
 															<div className="flex items-center gap-1">
 																{item.name} <FaCaretDown />

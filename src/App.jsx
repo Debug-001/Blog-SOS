@@ -6,6 +6,7 @@ import ScienceClub from "./pages/ScienceClub";
 import Faculty from "./pages/Faculty";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import SportsClub from "./pages/SportsClub";
+import Events from "./pages/Events";
 
 function App() {
 	return (
@@ -20,6 +21,7 @@ function App() {
 					<Route path="/cic" element={<Cic />} />
 					<Route path="/scienceclub" element={<ScienceClub />} />
 					<Route path="/faculty" element={<Faculty />} />
+					<Route path="/events" element={<Events />} />
 				</Routes>
 			</Router>
 		</>
