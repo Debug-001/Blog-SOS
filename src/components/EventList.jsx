@@ -1,28 +1,31 @@
 import React, { useState } from "react";
-import Image from "../assets/mb.png";
-import Chess from "../assets/logo1.png";
-import Ab from "../assets/ideathon.png";
+import Image from "../assets/cs.png";
+import Image2 from "../assets/aparoksha.jpg";
+import 	Image3 from "../assets/codemania.png";
 import { useEffect } from "react";
 
 export default function EventList({ max }) {
 	const [events, setEvents] = useState([
 		{
-			name: "Mobile Shiksha",
-			description: `Greetings From School Of Sciences, CHRIST (Deemed To Be University) Delhi NCR. This Is To Inform You That The School Of Sciences Is Conducting An Awareness Activity For Supporting Staff "MOBILE-SHIKSHA " On 17 September 2022 At 01:30 PM (Indian Standard Time). The Training Will Be Delivered By The BCA Students. • Venue - Block A , First Floor, Computer Lab • Date - 17th September 2022 • Time - 01:30 PM Onwards`,
-			url: "/",
+			name: "Computer Saksharta",
+			description: `Greetings From School Of Sciences, CHRIST (Deemed To Be University) Delhi NCR. This Is To Inform You that The Departmental Social Action(DSA) is a departmental level  club for School of Sciences which focuses on social welfare that includes donation drives, educating children, providing food for the ones in need, plantation drives etc. The Departmental Social Action brings you COMPUTER SHIKSHA, which includes educating the underprivileged children about computers, how to use them, how they work and about other Technology.`,
+			url: "https://docs.google.com/forms/d/e/1FAIpQLSdael3PKMX8lc3oNkFOFKF3-kFlE9jVPopbYoE397_oJ9_4Xg/closedform",
 			image: Image,
 		},
 		{
-			name: "Shah-Mat",
-			description: `Chess is everything : art, culture, science and sport."♟ with these great words by Anataly Karpov, Christ University School of Business & Management and School of Sciences* invite everyone to sharpen your brain while having fun. So let's play a game of chess in *"Sheh-Maat 2022"* , a *Chess Tournament* being organized at the departmental level .`,
-			url: "/",
-			image: Chess,
+			name: "Aparoksha",
+			description: `Greetings From School Of Sciences, CHRIST (Deemed To Be University) Delhi NCR. We are excited to announce that our biggest Intra-Department Fest - APAROKSHA 2k22 is finally here. Brace yourself for an exciting journey of Technical and Cultural events coupled with loads of fun🎊✨ 
+			Remember the dates: 7th Nov to 12th Nov`,
+			url: "https://docs.google.com/forms/d/e/1FAIpQLScvdeKyXSPwjFJYuw138boPwL_xPkbY4gWEIDAYNw7nRkgVrQ/viewform",
+			image: Image2,
 		},
 		{
-			name: "Ideathon for Soceity 5.0",
-			description: `Christ Innovation and Incubation Centre (CIIC) is organizing an event called 'Ideathon for Society 5.0' on Saturday, 17th September 2022. Some stalls will also be set up on the new basketball court, which will be an opportunity for all the small business owners and budding entrepreneurs to promote their business, be it food, product sales, or services. Since the number of stalls will be limited, they will be allotted on a first come first serve basis.`,
-			url: "/",
-			image: Ab,
+			name: "Codemania",
+			description: `Greetings From School Of Sciences, CHRIST (Deemed To Be University) Delhi NCR. We are proud to announce our first ever offline coding event! Its called Codemania, seems fun right? It is, This event is full of exciting questions and prizes. In this event you have to solve coding questions and based on some criteria you will be selected for the final round i.e. web dev. round. After registering, you are requested to check your inbox regularly for the updates regarding the event.
+
+			`,
+			url: "https://docs.google.com/forms/d/e/1FAIpQLSe0Sex0BAYuDFgD7PAX6LjGoDHy2riOpDy71yotRjScG7rUYg/closedform",
+			image: Image3,
 		},
 	]);
 
